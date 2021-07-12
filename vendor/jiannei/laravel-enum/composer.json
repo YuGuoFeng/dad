@@ -1,0 +1,38 @@
+{
+    "name": "jiannei\/laravel-enum",
+    "description": "Laravel Enum support",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jiannei",
+            "email": "longjian.huang@foxmail.com"
+        }
+    ],
+    "require": {
+        "ext-json": "*",
+        "jiannei/helpers": "^0.2.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.4",
+        "orchestra/testbench": "^6.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jiannei\\Enum\\Laravel\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jiannei\\Enum\\Laravel\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jiannei\\Enum\\Laravel\\Providers\\LaravelServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable" : true
+}
